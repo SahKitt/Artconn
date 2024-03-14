@@ -1,8 +1,7 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    width: 100%;
     background-color: #000000;
     color: white;
 }
@@ -87,46 +86,98 @@ body{
     opacity: 1;
     transition: 0s;
 }
+.ten{
+    display: flex;
+    align-self: center;
+}
+
 .first {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border-radius: 14px;
+    overflow: hidden;
+    opacity: 1;
+   
+    
+}
+.first.hidden{
+    opacity: 0;
+}
+#two {
+    position: relative; 
+    height: 600px;
 }
 .one{
-    margin-left: 30px;
+    position: relative;
+    width: 400px;
+    padding-left: 20px;
 }
-.hid {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    background-color: #ffffff;
-    color: #000;
-    width: 300px;
+#behind {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    animation: fadeInLetters 1s forwards;
+}
+#behind button{
+    text-decoration: none;
+    background-color: #FEC31A;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+#behind button:hover{
+    background-color: #5268f5;
+    transform: translateX(20px) scale(1.05);
+}
+@keyframes fadeInLetters {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.hid.visible {
+#animated {
+    color: #ffffff;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: revealText 1s steps(13, end) forwards;
+}
+
+@keyframes revealText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.second,
+.third {
+    display: none;
+    opacity: 0;
+    border-radius: 15px;
+}
+.second.show,
+.third.show {
     display: block;
     opacity: 1;
 }
-.sect{
-    margin-left: 20px;
+.second.hidden,
+.third.first.hidden{
+    opacity: 0;
 }
-.icon{
-    width: 5px;
-    height: 50px;
+.sec-one {
+    padding: 15px;
 }
-.icon i{
-    font-size: 40px;
-    margin-left: 20px;
-    padding-top: 10px;
-}
-.price button{
-    text-decoration: none;
-}
-.hid img{
-    width: 100%;
-    height: 300px;
+.what{
+    display: flex;
 }

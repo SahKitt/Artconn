@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="Style.css">
     <!-- link javascript -->
     <script src="script.js" type="module"></script>
-    <script src="display.js"></script>
+    <script src="model.js" type="module"></script>
+    <script src="slide.js"></script>
+    
     <!-- /////link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -43,137 +45,76 @@
     </nav>
     <!-- //////navigationn bar -->
 
-    
-    <!-- ///////section -->
-    <div class="first">
+   
+<section class="ten">
+    <!-- /////page 1 -->
+    <div class="first" id="first">
         <div class="one">
-            <h3>Priceless</h3>
-
-
-            <!-- /// -->
-            <section class="sect">
-                <div class="price">
-                    <button class="toggle-button">Van-go</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                    <!-- ///hidden -->
-                    <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Gustavo</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Davinco</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Piccaso</button>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                
-            </section>
-            <!-- //// -->
-
-
-
+            <div id="behind">
+                <h3 id="animated">Explore Art</h3>
+                <h3 id="animated">Pieces from across</h3>
+                <h3 id="animated">the globe</h3>
+                <button id="takeMeButton">Take me</button>
+            </div>
         </div>
 
         <div id="two">
-        <div id="scene"></div>
+            <div id="scene"></div>
         </div>
 
         <div class="three">
             <h3>Europe</h3>
-            
-             <!-- /// -->
-             <section class="sect">
-                <div class="price">
-                    <button class="toggle-button">Van-go</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                    <!-- ///hidden -->
-                    <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Gustavo</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Davinco</button>
-                    <div class="icon">
-                        <i style='font-size:24px' class='fas'>&#xf7a5;</i>
-                    </div>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                <div class="price">
-                    <button class="toggle-button">Piccaso</button>
-                     <!-- ///hidden -->
-                     <div class="hid">
-                        <img src="Assets/art1.jpeg" alt="Starry">
-                    <h5>Starry season</h5>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</p>
-                    </div>
-                    <!-- ///////hidden -->
-                </div>
-                
-            </section>
-            <!-- //// -->
         </div>
     </div>
-    <!-- //////section ends -->
+    <!-- ////////page 1 ends -->
 
-</div>
+    <!-- page 2 -->
+    <div class="second">
+        <section class="what">
+            <div class="sec-two">
+                <div id="scene2"></div>
+            </div>
+
+            <div class="sec-one">
+                <h3>Lion Crushing a Serpent (1832) by Antoine-Louis Barye (1796 - 1875)</h3>
+                <p>
+                    Although his contemporaries criticized his style and his choice of animal subjects,
+                    Barye is today esteemed as the founder of the Parisian animaliers.
+                    The noble lion, representing the new King and the people of France,
+                    is shown in a triumphant struggle against the serpent, symbolizing Charles X (reigned 1824-1830)
+                    and the ousted Bourbon dynasty. The pair additionally suggests a celestial sanction for Louis-Philippe’s
+                    reign by alluding to the constellations of Leo (the lion) and Hydra (the sea serpent),
+                    which “ruled the heavens” during the days of the July Revolution (July 27-30, 1830).
+                </p>
+                <button id="moreButton">more</button>
+            </div>
+    </section>
+    </div>
+    <!-- page 2 ends -->
+
+    <!-- //page 3 -->
+    <div class="third">
+        <section class="what">
+            <div class="sec-two">
+                <div id="scene"></div>
+            </div>
+
+            <div class="sec-one">
+                <h3>Lion Crushing a Serpent (1832) by Antoine-Louis Barye (1796 - 1875)</h3>
+                <p>
+                    Although his contemporaries criticized his style and his choice of animal subjects,
+                    Barye is today esteemed as the founder of the Parisian animaliers.
+                    The noble lion, representing the new King and the people of France,
+                    is shown in a triumphant struggle against the serpent, symbolizing Charles X (reigned 1824-1830)
+                    and the ousted Bourbon dynasty. The pair additionally suggests a celestial sanction for Louis-Philippe’s
+                    reign by alluding to the constellations of Leo (the lion) and Hydra (the sea serpent),
+                    which “ruled the heavens” during the days of the July Revolution (July 27-30, 1830).
+                </p>
+            </div>
+        </section>   
+    </div>
+    <!-- //page 3 ends -->
+</section>
+  
 </body>
 </html>
